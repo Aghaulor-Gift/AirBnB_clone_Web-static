@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header, Footer, Filter Box, and Results</title>
+    <link rel="stylesheet" href="styles/4-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+    <link rel="stylesheet" href="styles/6-filters.css">
+    <link rel="stylesheet" href="styles/100-places.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo"></div>
+    </header>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Filters section -->
+        <section class="filters">
+            <div class="locations">
+                <h3>States</h3>
+                <h4>Fake contents for states</h4>
+                <ul class="popover">
+                    <li><h2>State 1</h2>
+                        <ul>
+                            <li>City 1</li>
+                            <li>City 2</li>
+                        </ul>
+                    </li>
+                    <li><h2>State 2</h2>
+                        <ul>
+                            <li>City 1</li>
+                            <li>City 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="amenities">
+                <h3>Amenities</h3>
+                <h4>Fake contents for amenities</h4>
+                <ul class="popover">
+                    <li>Pet friendly</li>
+                    <li>TV</li>
+                    <li>Wifi</li>
+                    <!-- Add more amenities as needed -->
+                </ul>
+            </div>
+            <button class="search-btn">Search</button>
+        </section>
+
+        <!-- Places section -->
+        <section class="places">
+            <h1>Places</h1>
+            <article>
+                <h2>Place 1</h2>
+                <div class="price_by_night">$100</div>
+                <div class="information">
+                    <div class="max_guest">
+                        <i class="fas fa-users"></i>
+                        Max Guests: 4
+                    </div>
+                    <div class="number_rooms">
+                        <i class="fas fa-bed"></i>
+                        Bedrooms: 2
+                    </div>
+                    <div class="number_bathrooms">
+                        <i class="fas fa-bath"></i>
+                        Bathrooms: 2
+                    </div>
+                </div>
+                <div class="user">
+                    <strong>Owner:</strong> Fake owner
+                </div>
+                <div class="description">
+                    Fake description
+                </div>
+                <div class="amenities">
+                    <h2>Amenities</h2>
+                    <ul>
+                        <li>Pet friendly</li>
+                        <li>TV</li>
+                        <li>Wifi</li>
+                        <!-- Add more amenities as needed -->
+                    </ul>
+                </div>
+                <div class="reviews">
+                    <h2>Reviews</h2>
+                    <ul>
+                        <li>
+                            <h3>From Bob Dylan the 27th January 2017</h3>
+                            <p>Fake review text</p>
+                        </li>
+                        <!-- Add more reviews as needed -->
+                    </ul>
+                </div>
+            </article>
+            <!-- Add more articles for additional places -->
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Best School</p>
+    </footer>
+
+</body>
+</html>
