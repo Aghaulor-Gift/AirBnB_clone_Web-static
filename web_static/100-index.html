@@ -1,111 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header, Footer, Filter Box, and Results</title>
+    <!-- Image links-->
+    <link rel="icon" type="image/icon" href="../images/icon.png">
+    <link rel="icon" type="image/png" href="../images/logo.png">
+    <link rel="icon" type="image/icon" href="../images/icon_pets.png">
+    <link rel="icon" type="image/png" href="../images/icon_wifi.png">
+    <link rel="icon" type="image/png" href="../images/icon_tv.png">
+
+    <!-- CSS link-->
     <link rel="stylesheet" href="styles/4-common.css">
     <link rel="stylesheet" href="styles/3-header.css">
     <link rel="stylesheet" href="styles/3-footer.css">
     <link rel="stylesheet" href="styles/6-filters.css">
     <link rel="stylesheet" href="styles/100-places.css">
-</head>
-<body>
-
-    <!-- Header -->
+    <title>AirBnB clone</title>
+  </head>
+  <body>
     <header>
-        <div class="logo"></div>
     </header>
-
-    <!-- Container -->
     <div class="container">
-        <!-- Filters section -->
-        <section class="filters">
-            <div class="locations">
-                <h3>States</h3>
-                <h4>Fake contents for states</h4>
-                <ul class="popover">
-                    <li><h2>State 1</h2>
-                        <ul>
-                            <li>City 1</li>
-                            <li>City 2</li>
-                        </ul>
-                    </li>
-                    <li><h2>State 2</h2>
-                        <ul>
-                            <li>City 1</li>
-                            <li>City 2</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="amenities">
-                <h3>Amenities</h3>
-                <h4>Fake contents for amenities</h4>
-                <ul class="popover">
-                    <li>Pet friendly</li>
-                    <li>TV</li>
-                    <li>Wifi</li>
-                    <!-- Add more amenities as needed -->
-                </ul>
-            </div>
-            <button class="search-btn">Search</button>
-        </section>
+      <section class="filters">
+        <div class="locations">
+          <h3>States</h3>
+          <h4>Any state is wonderful</h4>
+          <ul class="popover">
+            <li><h2>Rivers-state:</h2>
+              <ul>
+                <li>Port-Harcourt</li>
+                <li>Nembe</li>
+              </ul>
+            </li>
+            <li><h2>Lagos:</h2>
+              <ul>
+                <li>Victoria Island</li>
+                <li>Ikeja</li>
+              </ul>
+            </li>
+            </ul>
+        </div>
+        <div class="amenities">
+          <h3>Amenities</h3>
+          <h4>Choose any of the amenities...</h4>
+          <ul class="popover">
+            <li>Wifi</li>
+            <li>TV</li>
+            <li>Pet-friendly</li>
+            <li>Heater</li>
+          </ul>
+        </div>
+        <button class="seach-btn" type="button">Search</button>
+      </section> <!-- end fiter-->
 
-        <!-- Places section -->
-        <section class="places">
-            <h1>Places</h1>
-            <article>
-                <h2>Place 1</h2>
-                <div class="price_by_night">$100</div>
-                <div class="information">
-                    <div class="max_guest">
-                        <i class="fas fa-users"></i>
-                        Max Guests: 4
-                    </div>
-                    <div class="number_rooms">
-                        <i class="fas fa-bed"></i>
-                        Bedrooms: 2
-                    </div>
-                    <div class="number_bathrooms">
-                        <i class="fas fa-bath"></i>
-                        Bathrooms: 2
-                    </div>
-                </div>
-                <div class="user">
-                    <strong>Owner:</strong> Fake owner
-                </div>
-                <div class="description">
-                    Fake description
-                </div>
-                <div class="amenities">
-                    <h2>Amenities</h2>
-                    <ul>
-                        <li>Pet friendly</li>
-                        <li>TV</li>
-                        <li>Wifi</li>
-                        <!-- Add more amenities as needed -->
-                    </ul>
-                </div>
-                <div class="reviews">
-                    <h2>Reviews</h2>
-                    <ul>
-                        <li>
-                            <h3>From Bob Dylan the 27th January 2017</h3>
-                            <p>Fake review text</p>
-                        </li>
-                        <!-- Add more reviews as needed -->
-                    </ul>
-                </div>
-            </article>
-            <!-- Add more articles for additional places -->
-        </section>
+      <section class="places">
+        <h1>Places</h1>
+        <article><!-- Cozy Cottage -->
+          <div class="article_title">
+            <h2>Cosy Cottage</h2>
+            <div class="price_by_night">$100</div>
+          </div>
+          <div class="information">
+              <div class="max_guest">
+                  <div class="guest_icon">
+		  </div>
+		  <div class="guest_number">
+		       <h2>2 Guests</h2>
+		  </div>
+	      </div>
+	      <div class="number_rooms">
+		   <div class="rooms_icon">
+		   </div>
+		   <div class="rooms_number">
+			<h2>1 Bedroom</h2>
+		   </div>
+	      </div>
+	      <div class="number_bathrooms">
+		   <div class="bathrooms_icon">
+		   </div>
+		   <div class="bathrooms_number">
+			<h2>1 Bathroom</h2>
+		   </div>
+	      </div>
+	  </div>
+    </div><!-- end information -->
+    <div class="user">
+            <p><b>Owner:</b> Ruth Johnson</p>
+    </div><!-- end user -->
+          <div class="description">
+            <p>This is a lovely 1 bathroom apartament that can accommodate 2 people. It locates at the center of Shanghai and next to subway line 1, 1 stop to People Square, 2 stops to Bund, 3 stops to Jungan Temle.</p>
+          </div><!-- end description -->
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Bob Dylan the 27th August 2022</h3>
+                <p>Runshi is an epic host. Nothing more i can say. 5 star!</p>
+              </li>
+              <li>
+                <h3>From Connor 4th August 2022</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h2>Riverside Retreat</h2>
+          <div class="price_by_night">$65</div>
+          <div class="information">
+            <div class="max_guest">4 Guests</div>
+            <div class="number_rooms">2 Bedrooms</div>
+            <div class="number_bathrooms">1 Bathroom</div>
+          </div><!-- end information -->
+          <div class="user">
+            <p><b>Owner:</b> Addriel Bullock</p>
+          </div><!-- end user -->
+          <div class="description">
+            <p>Our place is comfortable and enjoyable with great facilities.</p>
+          </div><!-- end description -->
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Pet friendly
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Wifi
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>2 Reviews</h2>
+            <ul>
+              <li>
+                <h3>From Rachel Franklin the 27th October 2023</h3>                <p>It's really a 5 star. They've got all it takes to give you comfort. I never thought I could find a place like this.</p>
+              </li>
+              <li>
+                <h3>From Jeremiah white 2023</h3>
+                <p>Higly recommended!</p>
+              </li>
+            </ul>
+          </div>
+        </article><!-- end Cosy Cott -->	
+            </ul>
+          </div>
+        </article>
+        <article>
+          <h2>A suite</h2>
+          <div class="price_by_night">$190</div>
+          <div class="information">
+            <div class="max_guest">5 Guests</div>
+            <div class="number_rooms">3 Bedroom</div>
+            <div class="number_bathrooms">2 Bathroom</div>
+          </div><!-- end information -->
+          <div class="user">
+            <p><b>Owner:</b> Beatrice Johnson</p>
+          </div><!-- end user -->
+          <div class="description">
+            <p>First loft built by Holbies. It contains a decked terrace, jacuzzi, firepit, rabbits garden, two rooms, two balconies, entrance gate, private garden, private parking, BBQ area, AC in each bedroom, technological equipment, luxury beds, and mountain views. Ideal for architecture lovers, romantic dates, or having a good time. It is a unique space of his kind. Only pets that do not harm rabbits are allowed.</p>
+          </div><!-- end description -->
+          <div class="amenities">
+            <h2>Amenities</h2>
+            <ul>
+              <li>
+                <div class="places_amenities_pet_friendly"></div>
+                Wifi
+            </li>
+              <li>
+                <div class="places_amenities_tv"></div>
+                Tv
+            </li>
+              <li>
+                <div class="places_amenities_wifi"></div>
+                Pet-friendly
+            </li>
+            </ul>
+          </div>
+          <div class="reviews">
+            <h2>1 Review</h2>
+            <ul>
+              <li>
+                <h3>From Fibresima Belema  May, 2023</h3>
+		<p>I love this place. Amazing!</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        </section> <!-- end section -->
     </div>
-
-    <!-- Footer -->
     <footer>
-        <p>Best School</p>
+      <p>Best School</p>
     </footer>
-
-</body>
+  </body>
 </html>
